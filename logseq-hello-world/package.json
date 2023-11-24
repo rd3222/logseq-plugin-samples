@@ -1,19 +1,12 @@
 {
-  "name": "pplx",
+  "name": "logseq-pplx-chat",
   "version": "1.0.0",
-  "description": "A Logseq plugin that connects to pplx-70b",
+  "description": "A chat application that interacts with Logseq using the Perplexity language model",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "axios": "^0.21.1"
-  },
-  "logseq": {
-    "main": "index.js",
-    "id": "rd3222",
-    "name": "Pplx Plugin",
-    "description": "A Logseq plugin that connects to pplx-70b",
-    "icon": "src/icon.svg"
   }
 }

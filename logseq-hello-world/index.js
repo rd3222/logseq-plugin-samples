@@ -38,7 +38,17 @@ async function connectPplxToLogseq(prompt) {
 
   return logseqResponse;
 }
-
+// Register the new command
+logseq.Editor.registerSlashCommand({
+  id: 'chat-with-p',
+  name: 'Chat with P.',
+  description: 'Start a chat with P.',
+  onExecute: async () => {
+    const prompt = 'Hello, P.';
+    const response = await connectPplxToLogseq(prompt);
+    console.log(response);
+  },
+});
 // Register the new command
 logseq.Editor.registerSlashCommand({
   id: 'connect-pplx',

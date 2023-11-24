@@ -1,18 +1,19 @@
 {
-  "name": "logseq-hello-world",
-  "version": "0.0.1",
-  "author": "©Logseq Team",
-  "main": "index.html",
-  "description": "📖 Hello, Logseq :)",
-  "license": "MIT",
-  "devDependencies": {
-    "@logseq/libs": "^0.0.1-alpha.29"
+  "name": "pplx",
+  "version": "1.0.0",
+  "description": "A Logseq plugin that connects to pplx-70b",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
   },
-  "browserslist": [
-    "chrome 80"
-  ],
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
   "logseq": {
-    "id": "_edodonfur",
-    "icon": "logseq.png"
+    "main": "index.js",
+    "id": "rd3222",
+    "name": "Pplx Plugin",
+    "description": "A Logseq plugin that connects to pplx-70b",
+    "icon": "src/icon.svg"
   }
 }

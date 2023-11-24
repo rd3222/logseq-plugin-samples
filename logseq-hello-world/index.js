@@ -39,5 +39,14 @@ async function connectPplxToLogseq(prompt) {
   return logseqResponse;
 }
 
-// Use the function
-connectPplxToLogseq('Hello, world!');
+// Register the new command
+logseq.Editor.registerSlashCommand({
+  id: 'connect-pplx',
+  name: 'Connect to Pplx',
+  description: 'Connect to Pplx and send a prompt',
+  onExecute: async () => {
+    const prompt = 'Hello, world!';
+    const response = await connectPplxToLogseq(prompt);
+    console.log(response);
+  },
+});

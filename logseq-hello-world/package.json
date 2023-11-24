@@ -4,9 +4,19 @@
   "description": "A chat application that interacts with Logseq using the Perplexity language model",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "@logseq/libs": "^0.0.15"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "logseq": {
+    "id": "_vg9oa1zt7"
   }
 }
